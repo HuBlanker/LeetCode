@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/pfliu/study/LeetCode/cplusplus/leetcode/editor/cn/[459]重复的子字符串.cpp
+iostream
+-
+string
+-
+

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/pfliu/study/LeetCode/cplusplus/leetcode/editor/cn/[217]存在重复元素.cpp
+unordered_map
+-
+iostream
+-
+vector
+-
+
