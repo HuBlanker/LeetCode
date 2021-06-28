@@ -37,18 +37,18 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        l = 0
-        n = len(nums)
-        r = n - 1
-        ans = n
-        while l <= r:
-            m = int((l + r) / 2)
-            if nums[m] >= target:
-                ans = m
-                r = m - 1
-            else:
-                l = m + 1
-        return ans
+        left = 0
+        right = len(nums) - 1
+        while left <= right:
+            pivot = left + ((right - left) >> 1)
+            mid_v = nums[pivot]
+            if target == mid_v:
+                return pivot
+            elif target < mid_v:
+                right = pivot - 1
+            elif target > mid_v:
+                left = pivot + 1
+        return left
 
 
 # leetcode submit region end(Prohibit modification and deletion)
