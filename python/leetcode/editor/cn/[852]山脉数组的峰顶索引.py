@@ -82,18 +82,11 @@ class Solution(object):
 
             if left < pivot < right and mid_v > arr[pivot - 1] and mid_v > arr[pivot + 1]:
                 return pivot
-            if pivot < right:
-                mid_r = arr[pivot + 1]
-                if mid_v > mid_r:
-                    right = pivot
-                elif mid_v < mid_r:
-                    left = pivot
-            elif pivot > left:
-                mid_l = arr[pivot - 1]
-                if mid_v > mid_l:
-                    left = pivot
-                elif mid_v < mid_l:
-                    right = pivot
+            mid_r = arr[pivot + 1]
+            if mid_v > mid_r:
+                right = pivot
+            elif mid_v < mid_r:
+                left = pivot
         return left
 
 

@@ -69,5 +69,18 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+        left = 0
+        right = n
+        while left <= right:
+            mid = left + ((right - left) >> 1)
+            res = guess(mid)
+            if res == 0 :
+                return mid
+            elif res == -1:
+                right =  mid - 1
+            elif res == 1:
+                left = mid + 1
+        return left
+
         
 # leetcode submit region end(Prohibit modification and deletion)
